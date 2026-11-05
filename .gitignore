@@ -1,0 +1,38 @@
+# Private libraries and local working material belong here, never in pohjat.json.
+private/
+local/
+*.private.json
+*.local.json
+*varmuuskopio*.json
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Build/test output, temporary browser profiles and developer tools.
+dist/
+output/
+.playwright/
+.playwright-cli/
+.qa-tools/
+node_modules/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local-only development materials
+/tests/
+/scripts/
+/README.md
+/MAINTENANCE.md
+/PUBLISHING.md
+/REGULATORY.md
+/RELEASE-0.4.0.md
+/SECURITY.md

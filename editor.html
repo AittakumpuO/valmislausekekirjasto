@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Muokkaa pohjia – Valmislausekekirjasto</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="editor.css">
+</head>
+<body class="editor">
+  <header><div class="width"><h1>Muokkaa pohjia</h1><p class="sub">Valmislausekekirjasto · Muutokset tulevat paneeliin, kun tallennat.</p></div></header>
+  <main class="width">
+    <p id="status" role="status" aria-live="polite" aria-atomic="true">Avataan kirjastoa…</p>
+    <fieldset id="workspace" disabled>
+      <legend class="visually-hidden">Tekstikirjaston muokkaus</legend>
+      <div class="toolbar">
+        <button id="save" class="btn">Tallenna pohjat</button>
+        <button id="importButton" class="btn secondary">Tuo JSON</button>
+        <input id="import" class="visually-hidden" type="file" accept=".json,application/json" tabindex="-1" aria-label="Valitse tuotava JSON-tiedosto">
+        <button id="export" class="btn secondary">Vie JSON</button>
+        <button id="reload" class="btn secondary">Lataa tallennetut</button>
+      </div>
+      <p class="tiny">Tuonti korvaa muokkausnäkymän sisällön. Vienti sisältää myös tallentamattomat muutokset.</p>
+      <section class="edit-block" aria-labelledby="groupHeading">
+        <h2 id="groupHeading">1. Toimenpide</h2>
+        <div class="edit-row"><div class="grow"><label for="group">Toimenpide</label><select id="group"></select></div><button id="addGroup" class="btn secondary">Lisää toimenpide</button></div>
+        <div class="edit-row"><div class="grow"><label for="groupName">Toimenpiteen nimi</label><input id="groupName" maxlength="150" placeholder="Esim. Yhteydenotto" spellcheck="false" autocomplete="off"></div><button id="delGroup" class="btn danger">Poista toimenpide</button></div>
+      </section>
+      <section class="edit-block" aria-labelledby="scenarioHeading">
+        <h2 id="scenarioHeading">2. Lopputulos</h2>
+        <div class="edit-row"><div class="grow"><label for="scenario">Lopputulos</label><select id="scenario"></select></div><button id="addScenario" class="btn secondary">Lisää lopputulos</button></div>
+        <div class="edit-row"><div class="grow"><label for="scenarioName">Lopputuloksen nimi</label><input id="scenarioName" maxlength="150" placeholder="Esim. Asia ratkaistu" spellcheck="false" autocomplete="off"></div><button id="delScenario" class="btn danger">Poista lopputulos</button></div>
+      </section>
+      <section class="edit-block" aria-labelledby="fieldsHeading">
+        <div class="edit-row"><h2 id="fieldsHeading" class="grow">3. Kopioitavat tekstit</h2><button id="addField" class="btn secondary">Lisää tekstiboksi</button></div>
+        <div id="fields"></div>
+      </section>
+      <div class="library-delete"><div><h2>Tyhjennä kirjasto</h2><p class="tiny">Poistaa tähän Edge-profiiliin tallennetut pohjat ja tämän näkymän muutokset. Vie tarvittaessa varmuuskopio ensin.</p></div><button id="reset" class="btn danger">Tyhjennä kirjasto</button></div>
+    </fieldset>
+    <p class="tiny">Tallennus on paikallinen. JSON-varmuuskopio on tavallinen tekstitiedosto. Noudata organisaatiosi tietoturvaohjeita.</p>
+  </main>
+  <script src="common.js"></script><script src="editor.js"></script>
+</body>
+</html>

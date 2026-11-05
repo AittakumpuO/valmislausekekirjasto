@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valmislausekekirjasto</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="panel">
+  <header><h1>Valmislausekekirjasto</h1><p class="sub">Valitse pohja ja kopioi teksti.</p></header>
+  <main>
+    <div class="template-select"><label for="group">Toimenpide</label><select id="group" disabled></select></div>
+    <div class="template-select"><label for="scenario">Lopputulos</label><select id="scenario" disabled></select></div>
+    <p id="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <section id="cards" aria-label="Kopioitavat tekstit"></section>
+  </main>
+  <footer class="panel-footer">
+    <button id="edit" class="btn">Luo tai tuo pohjia</button>
+    <p class="tiny">Pohjat tallennetaan tähän Edge-profiiliin.</p>
+  </footer>
+  <script src="common.js"></script><script src="panel.js"></script>
+</body>
+</html>

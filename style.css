@@ -1,0 +1,46 @@
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#202c38;background:#f5f7f9;font-size:14px}
+*{box-sizing:border-box}
+body{margin:0;line-height:1.5}
+header{padding:16px;border-bottom:1px solid #dce2e7;background:#fff}
+h1{margin:0;font-size:18px;line-height:1.35;font-weight:650;overflow-wrap:anywhere}
+h2{margin:0;font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+p{margin:8px 0}
+.sub,.tiny{color:#52616f;font-size:12px}
+.sub{margin:4px 0 0}
+main{padding:16px}
+label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+select,input,textarea{width:100%;min-width:0;min-height:38px;padding:8px 10px;border:1px solid #9ba9b6;border-radius:5px;background:#fff;color:inherit;font:inherit}
+textarea{min-height:130px;resize:vertical;line-height:1.6}
+select:disabled,input:disabled,textarea:disabled{background:#edf0f3;color:#596875}
+.template-select{margin-bottom:12px}
+.card{margin:0 0 20px}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.card-head h2{padding-top:7px;min-width:0;font-size:16px;font-weight:700}
+.sample{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;margin:0;padding:12px 14px;border:1px solid #9ba9b6;border-radius:6px;background:#fff;max-height:45vh;overflow-y:auto;user-select:text}
+.sample:empty::before{content:"Tyhjä teksti";color:#52616f}
+.btn{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;min-height:36px;padding:7px 12px;border:1px solid #155b8c;border-radius:5px;background:#155b8c;color:#fff;cursor:pointer;font:inherit;font-size:13px;font-weight:600;line-height:1.4;text-align:center}
+.btn:hover{background:#10466b}
+:focus-visible{outline:3px solid #0068b5;outline-offset:3px}
+.btn.secondary{border-color:#a8b6c3;background:#fff;color:#25465e}
+.btn.secondary:hover{background:#eef3f7}
+.btn.danger{border-color:#c6a3a6;background:#fff;color:#8a2630}
+.btn.danger:hover{background:#fff0f1}
+.btn:disabled{background:#e3e8ed;border-color:#b8c3cc;color:#586571;cursor:default}
+#status{font-size:13px;min-height:20px;color:#21613e;margin:0 0 12px;overflow-wrap:anywhere}
+#status.error{color:#9c2631}
+#status.pending{color:#795300}
+a{color:#155b8c;text-underline-offset:3px}
+.empty{padding:16px 0;color:#52616f}
+.panel{display:flex;flex-direction:column;min-height:100vh;font-size:16px}
+.panel label{font-size:15px}
+.panel select{min-height:44px}
+.panel .btn{font-size:14px}
+.panel .sub,.panel .tiny{font-size:13px}
+.panel #status{font-size:14px}
+.panel main{flex:1}
+.panel-footer{padding:14px 16px;border-top:1px solid #dce2e7;background:#fff}
+.panel-footer .btn{width:100%}
+.panel-footer p{margin:8px 0 2px}
+fieldset{min-width:0;border:0;padding:0;margin:0}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(forced-colors:active){.btn,.sample,select,input,textarea{border:1px solid ButtonText}:focus-visible{outline-color:Highlight}}

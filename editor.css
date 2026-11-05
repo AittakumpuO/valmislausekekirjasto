@@ -1,0 +1,18 @@
+.width{max-width:850px;margin:0 auto}
+.editor main{padding:20px 20px 32px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.edit-block{background:#fff;border:1px solid #d5dde5;border-radius:6px;margin:18px 0;padding:16px}
+.edit-block h2{font-size:16px;margin:0 0 14px}
+.edit-row{display:flex;gap:12px;align-items:flex-end;margin:12px 0;flex-wrap:wrap}
+.edit-row .btn{min-height:39px}
+.grow{flex:1 1 280px;min-width:0}
+.edit-row h2{margin:0}
+.field{border:1px solid #d5dde5;border-radius:5px;margin:14px 0 0;padding:14px;background:#f8fafb}
+.field-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.field label{margin-top:10px}
+.field-controls{display:flex;gap:6px;flex-wrap:wrap}
+.field-controls .btn{min-width:36px}
+.library-delete{display:flex;gap:16px;align-items:center;justify-content:space-between;margin:28px 0 20px;padding-top:20px;border-top:1px solid #d5dde5}
+.library-delete p{margin-bottom:0}
+#status{font-weight:600}
+@media(max-width:600px){.editor main{padding:16px 12px}.edit-block{padding:12px}.edit-row .btn{width:100%}.library-delete{align-items:flex-start;flex-direction:column}.toolbar .btn{flex:1 1 auto}}

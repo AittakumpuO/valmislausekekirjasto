@@ -1,0 +1,8 @@
+{
+  "extensionName": {
+    "message": "Valmislausekekirjasto"
+  },
+  "extensionDescription": {
+    "message": "Luo ja käytä omia tekstipohjia Edgen sivupaneelissa. Tuo ja vie pohjat JSON-tiedostona."
+  }
+}
